@@ -1,17 +1,30 @@
 /*
-Cad快速看图 https://apps.apple.com/cn/app/cad%E5%BF%AB%E9%80%9F%E7%9C%8B%E5%9B%BE-%E5%A4%A9%E6%AD%A3%E5%85%A8%E4%B8%93%E4%B8%9A/id878550740
 
+项目名称：CAD快速看图
+下载地址：https://t.cn/A60VKj9S
+脚本作者：@ios151
+特别感谢：@chxm1023,@GuDing
+电报频道：https://t.me/chxm1023
+使用声明：本人共享token 请勿随意删除“快看云盘”里面的图纸 否则删库
+使用方法：账号：baby 密码：1
 
 [rewrite_local]
-^https:\/\/cad\.glodon\.com\/account\/ url script-response-body
-cad.js
+^https?:\/\/cad\.glodon\.com\/(account|authorize\/query|alipay\/auth) url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/Cad.js
+
 
 [MITM]
 hostname = cad.glodon.com
 
 */
-// 模拟请求的数据
-var requestData = {
+
+var body = $response.body;
+var baby = JSON.parse(body);
+const vip1 = '/account';
+const vip2 = '/alipay/auth';
+const vip3 = '/authorize/query';
+
+if ($request.url.indexOf(vip1) != -1){
+  var requestData = {
   "data": {
     "platformNumber": "1",
     "appId": "1108096074",
@@ -19,9 +32,7 @@ var requestData = {
   },
   "code": 0
 };
-
-// 模拟返回的数据
-var responseData = {
+  var responseData = {
   "body": {
     "cadToken": "761b03f5-c01e-4e66-97dc-cc1fd2011d4f",
     "loginIdentity": "1689926495150",
@@ -40,16 +51,27 @@ var responseData = {
   },
   "code": 1
 };
-
-// 模拟请求处理
-function handleRequest(requestData) {
-  // 这里可以对requestData进行处理，根据不同的请求参数返回不同的responseData
-  // 在实际测试中，您可以根据您的需求修改模拟的请求处理逻辑
+  function handleRequest(requestData) {
   return responseData;
+};
+  var response = handleRequest(requestData);
+  body = JSON.stringify(response);
 }
 
-// 调用handleRequest处理请求并返回模拟数据
-var response = handleRequest(requestData);
+if ($request.url.indexOf(vip2) != -1){
+  baby = {
+  "endDate": "5201-03-14 19:57:57",
+  "code": "1"
+};
+  body = JSON.stringify(baby);
+}
 
-// 返回修改后的数据
-$done({ body: JSON.stringify(response) });
+if ($request.url.indexOf(vip3) != -1){
+  baby = {
+  "endDate": "5201-03-14 19:57:57",
+  "code": "1"
+};
+  body = JSON.stringify(baby);
+}
+
+$done({body});
