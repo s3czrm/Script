@@ -26,3 +26,5 @@ function greet() {
 }
 
 console.log(greet());
+The sum of 10 and 5 is 15.
+
