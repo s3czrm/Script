@@ -1,18 +1,24 @@
-# My Awesome Project
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Test</title>
+</head>
+<body>
+  <h1>JavaScript Test</h1>
 
-This is a description of my awesome project. It does amazing things and brings joy to everyone!
+  <script>
+    function addNumbers(a, b) {
+      return a + b;
+    }
 
-## Getting Started
+    const num1 = 10;
+    const num2 = 5;
+    const sum = addNumbers(num1, num2);
 
-To get started with this project, you can follow these steps:
-
-1. Clone the repository.
-2. Install the dependencies.
-3. Run the application.
-
-## Code Example
-
-Here's a JavaScript function that greets the world:
+    document.write(`The sum of ${num1} and ${num2} is ${sum}.`);
+  </script>
+</body>
+</html>
 
 ```javascript
 function greet() {
