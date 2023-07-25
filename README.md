@@ -1,40 +1,22 @@
-# Welcome to Yu9191's GitHub Profile!
+# Welcome to My GitHub Profile!
 
-<div align="center">
-    <img src="https://your-profile-image-url.com/your-profile-image.jpg" alt="Yu9191" width="200">
-</div>
+Hello there! Welcome to my GitHub profile. I'm passionate about coding, open-source projects, and creating cool stuff.
 
-Hello there! Welcome to my GitHub profile. I'm Yu9191, and I'm passionate about coding, open-source projects, and creating cool stuff.
+## About Me
 
-## Featured Projects
+I have a fascination with the number π (pi).
 
-Here are some of my featured projects that I'm proud of:
+The mathematical constant π (pi) is approximately 3.14159 and represents the ratio of a circle's circumference to its diameter. It is an irrational number, which means it cannot be expressed as a simple fraction, and its decimal representation goes on forever without repeating.
 
-- [Project 1](https://github.com/Yu9191/Project1): A description of project 1 goes here.
-- [Project 2](https://github.com/Yu9191/Project2): A description of project 2 goes here.
-- [Project 3](https://github.com/Yu9191/Project3): A description of project 3 goes here.
+Here's a fun math challenge for you:
 
-## Other Repositories
+## Math Challenge
 
-In addition to the featured projects above, I have other repositories that you might find interesting:
+What is the area of a circle with a diameter of 10 units? (Round your answer to two decimal places.)
 
-- [Repository A](https://github.com/Yu9191/RepositoryA): A brief description of repository A.
-- [Repository B](https://github.com/Yu9191/RepositoryB): A brief description of repository B.
-- [Repository C](https://github.com/Yu9191/RepositoryC): A brief description of repository C.
-
-## Contact Me
-
-If you have any questions or just want to say hi, feel free to reach out to me:
-
-- Email: youremail@example.com
-- Twitter: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
-
-## Support Me
-
-If you find my projects helpful or interesting, consider supporting me:
-
-- [Buy Me a Coffee](https://www.buymeacoffee.com/Yu9191)
+Good luck with the challenge!
 
 ## Thank You!
 
-Thanks for visiting my profile and checking out my projects. Have a great day!
+Thanks for visiting my profile. Have a great day!
+
