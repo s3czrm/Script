@@ -1,6 +1,6 @@
 # 生活，充满向往:call_me_hand::call_me_hand:
 
-![Life's Wonder]([https://your-image-url.com/your-image.jpg](https://raw.githubusercontent.com/Yu9191/-/main/nv2.png))
+![Life's Wonder](https://raw.githubusercontent.com/Yu9191/-/main/nv2.png)
 
 生活，是一场奇妙的冒险，充满了未知和可能。让我们一起探索、发现、追求梦想，庆祝每一个时刻，传播积极的力量，战胜内心的恐惧。
 
