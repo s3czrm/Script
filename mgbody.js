@@ -34,15 +34,20 @@ hostname = *.mgtv.com
 var body = $response.body;
 var url = $request.url;
 
-//https://mobile.api.mgtv.com/v8/video/getSource
+// 修改VIP视频提示文本
+// 正则表达式匹配：url.includes('/v8/video/getSource') 包含 '/v8/video/getSource' 的URL
+// 替换视频提示文本，将 "text" 后面的内容替换为 "尊敬的SVIP会员,您正在观看SVIP尊享内容"
+// 替换 "尊敬的V\d会员" 为 "尊敬的SVIP会员"
 url.includes('/v8/video/getSource') && (body = body.replace(/"text":"[^"]+/g, "\"text\": \"尊敬的SVIP会员,您正在观看SVIP尊享内容").replace(/尊敬的V\d会员/g, "尊敬的SVIP会员"));
 
+// 解析响应体为JSON对象
 var obj = JSON.parse(body);
 
-//VIP https://nuc.api.mgtv.com/GetUserInfo
+// 处理VIP用户信息
+// 正则表达式匹配：url.includes('/GetUserInfo') 包含 '/GetUserInfo' 的URL
 if (url.includes('/GetUserInfo')) {
-    //obj.data.nickname = "";
-	obj.data.isVip = 1;
+    // 设置VIP信息
+    obj.data.isVip = 1;
     obj.data.vipExpiretime = 324938345490000;
     obj.data.vipinfo.isvip = 1;
     obj.data.vipinfo.vip_end_time = "2088-08-08 00:00:00";
@@ -51,12 +56,15 @@ if (url.includes('/GetUserInfo')) {
     body = JSON.stringify(obj);
 }
 
-//我的 https://me.bz.mgtv.com/v3/module/list
-//1=顶部模块  2=用户信息模块 3=推荐位模块 4=追剧助手  5=大芒计划/我的小芒  6=banner图模块  7=我的服务  8=运营商专区/兴趣中心/推荐功能
+// 我的页面处理，筛选显示指定模块
+// 1=顶部模块  2=用户信息模块 3=推荐位模块 4=追剧助手  5=大芒计划/我的小芒  6=banner图模块  7=我的服务  8=运营商专区/兴趣中心/推荐功能
+// 正则表达式匹配：url.includes('/module/list') 包含 '/module/list' 的URL
 if (url.includes('/module/list')) {
     var obj = JSON.parse(body);
+    // 筛选显示指定模块
     obj.data.list = obj.data.list.filter(item => item.id == 1 || item.id == 2 || item.id == 4 || item.id == 5 || item.id == 7);
     body = JSON.stringify(obj);
 }
 
+// 返回修改后的响应体
 $done({body});
