@@ -1,5 +1,6 @@
 /**
  * 仅为测试,汤头条轻量版,请勿转载
+ * 在线观看：https://p4.ttt010.biz/下载地址：http://ttt.tips/ 备用https://df.fnyxpk.com/chan/a11954/cvDh9 
  * 在QuanX中运行的脚本 同时支持 QuanX 和 Loon 两种格式, EnvJs根据运行环境自动转换, Surge 环境不支持多媒体通知
  * 用于捕获视频链接并显示通知
  * 适用于QuanX APP版本 1.0.10-build198及以上
