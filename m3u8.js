@@ -1,12 +1,18 @@
 /**
  * 仅为测试,汤头条轻量版,请勿转载
- * 这里只是汤头条播放地址为例，其他的还有50度灰也是h5play，海角视频是10play，海角金币视频是12play
- * 妻友,糖人是120play，糖人部分视频h5play，
+ * 这里只是汤头条播放地址为例，其他的还有50度灰也是h5play，91短视频（通杀解锁vip视频），海角视频俩是10play，海角金币视频是12play
+ * 妻友,糖人是120play，糖人部分视频h5play，91AV是120play，91AV部分视频10play,微密圈10play
+ * 小蓝视频h5play，她趣-首页视频h5play，她趣-小视频10play，
  * 汤头条在线观看：https://p4.ttt010.biz/下载地址：http://ttt.tips/ 备用https://df.fnyxpk.com/chan/a11954/cvDh9 
  * 海角社区在线地址：https://p1.haij010.biz/ 下载地址：https://haijiao.fun/
  * 50度灰在线视频：https://p3.hui010.biz/ 下载地址：http://50dh.app/
  * 妻友在线视频：https://uapp.live/ 备用地址：https://4ee.neflgo.com/?code=RJdm
  * 糖人在线观看：https://tren.live/备用地址：https://tren.app002.biz/af/cduf
+ * 91短视频：https://dbf4801.zfijby.com/aff-hVbkx
+ * 91AV：https://mv.aff009.net/aff-cmAru
+ * 微密圈：https://app.wmq.life/aff-nVJM
+ * 小蓝视频：https://p4.gv009.fun/#/home
+ * 她趣视频：https://app.xttworld.com/af/bnjU
  * 在QuanX中运行的脚本 同时支持 QuanX 和 Loon 两种格式, EnvJs根据运行环境自动转换, Surge 环境不支持多媒体通知
  * 用于捕获视频链接并显示通知
  * 适用于QuanX APP版本 1.0.10-build198及以上
