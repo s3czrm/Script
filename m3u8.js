@@ -40,6 +40,8 @@ hostname = *longyuandingyi*
 
 const $ = new Env("GOGOGOGO");
 let url = $request.url, headers = $request.headers;
+
+// 这里只是汤头条播放地址为例，其他的还有50度灰也是h5play，海角视频是10play，海角金币视频是12play，妻友是120play等替换h5paly即可
 url = url.replace('h5play', 'long');
 
 // 检查是否含有 X-Playback-Session-Id 头部
