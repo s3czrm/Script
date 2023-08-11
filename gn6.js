@@ -10,6 +10,7 @@ thanks @聪
 
 [mitm]
 hostname = isi.csan.goodnotes.com
+*/
 
 const baby = {};
 const love = JSON.parse(typeof $response !== "undefined" && $response.body || null);
