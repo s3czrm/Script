@@ -8,7 +8,7 @@
 
 
 [rewrite_local]
-^https:\/\/xunji\.gxzckj\.com\/whole_user_info_v3 url script-request-body https://raw.githubusercontent.com/Yu9191/Script/main/xunji61109.js
+^https:\/\/xunji\.gxzckj\.com\/whole_user_info_v4 url script-request-body https://raw.githubusercontent.com/Yu9191/Script/main/xunji61109.js
 
 
 [mitm]
