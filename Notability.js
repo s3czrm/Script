@@ -30,7 +30,7 @@ baby = {
          "refundedDate" : null,
          "refundedReason" : null,
          "isInBillingRetryPeriod" : false,
-         "expirationDate" : "9999-09-09T09:09:09.000Z",
+         "expirationDate" : "2055-05-26T09:09:09.000Z",
          "gracePeriodExpiresAt" : null,
          "overDeviceLimit" : false,
          "expirationIntent" : null,
